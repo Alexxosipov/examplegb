@@ -11,6 +11,7 @@ class CategoryController extends Controller
     {
         $news = $category->news()->get();
 
+        //asd asd as
         return view('categories.show', compact('category', 'news'));
     }
 }
