@@ -1,0 +1,65 @@
+version: "3.5"
+services:
+  example-redis:
+    image: redis:alpine
+    container_name: example-redis
+    volumes:
+      - example-redis:/data
+    ports:
+      - "16377:6379"
+    networks:
+      - example
+
+  example-mysql:
+    image: mysql:5.7.22
+    container_name: example-mysql
+    working_dir: /application
+    volumes:
+      - example-mysql:/var/lib/mysql/
+    environment:
+      MYSQL_ROOT_PASSWORD: KBHJ8765ljk767kh
+      MYSQL_DATABASE: app
+    ports:
+      - "2324:3306"
+    networks:
+      - example
+
+  example-nginx:
+    image: nginx:alpine
+    container_name: example-nginx
+    working_dir: /application
+    volumes:
+      - ../../:/application
+      - ./phpdocker/nginx:/etc/nginx/conf.d
+    ports:
+      - "80:80"
+    networks:
+      - example
+    depends_on:
+      - example-php-fpm
+
+  example-php-fpm:
+    build: phpdocker/php-fpm
+    container_name: example-php-fpm
+    working_dir: /application
+    volumes:
+      - ../../:/application
+      - ./phpdocker/php-fpm/php-ini-overrides.ini:/etc/php/7.4/fpm/conf.d/99-overrides.ini
+    ports:
+      - "9000"
+    networks:
+      - example
+    environment:
+      APP_ENV: local
+      CONTAINER_ROLE: app
+
+networks:
+  example:
+    driver: bridge
+
+volumes:
+  example-mysql:
+    driver: "local"
+  example-redis:
+    driver: "local"
+
