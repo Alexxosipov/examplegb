@@ -16,8 +16,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $categories = Category::factory(5)
-            ->has(News::factory(10))
+        Category::factory(5)
             ->create();
     }
 }
