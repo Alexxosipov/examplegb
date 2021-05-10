@@ -1,87 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="226782ba-15ad-4967-8b5b-0538f1a1d0cd" name="Default Changelist" comment="lesson 2: asdasdfasd">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthenticatedSessionController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmablePasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/EmailVerificationNotificationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/EmailVerificationPromptController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/NewPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/PasswordResetLinkController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisteredUserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerifyEmailController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Auth/LoginRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/News/StoreNewsRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/NewsShowRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/View/Components/AppLayout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/View/Components/GuestLayout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/CategorySeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/ru/validation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/confirm-password.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/forgot-password.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/reset-password.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/verify-email.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/application-logo.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/auth-card.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/auth-session-status.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/auth-validation-errors.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/button.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/content-body.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/dropdown-link.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/dropdown.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/input.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/label.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/nav-link.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/news/news-preview.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/responsive-nav-link.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/navigation.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/news/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/AuthenticationTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/CreateNewsTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/EmailVerificationTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/PasswordConfirmationTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/PasswordResetTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/RegistrationTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/example.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="226782ba-15ad-4967-8b5b-0538f1a1d0cd" name="Default Changelist" comment="lesson 4">
+      <change afterPath="$PROJECT_DIR$/resources/views/categories/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/News.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/production/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/production/hosts/edaport.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/production/nginx/nginx.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/production/php-fpm/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/production/php-fpm/cron/crontab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/production/php-fpm/php-ini-overrides.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/production/php-fpm/start.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/production/run.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/news/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/news/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/NewsFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/NewsFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_29_170137_create_news_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_29_170137_create_news_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/CategorySeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/CategorySeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/categories/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/categories/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,7 +176,7 @@
     <property name="node.js.selected.package.stylelint" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Template Data Languages" />
+    <property name="settings.editor.selected.configurable" value="LaravelIdea.Settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -300,7 +228,7 @@
       <workItem from="1619714194053" duration="6602000" />
       <workItem from="1620059630103" duration="5848000" />
       <workItem from="1620318567321" duration="8359000" />
-      <workItem from="1620664074383" duration="256000" />
+      <workItem from="1620664074383" duration="5404000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1619719395977</created>
@@ -316,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619719448492</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="lesson 4">
+      <created>1620665405908</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1620665405910</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +272,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="lesson 2: asdasdfasd" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 2: asdasdfasd" />
+    <MESSAGE value="lesson 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 4" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
