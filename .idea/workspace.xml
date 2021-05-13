@@ -2,13 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="226782ba-15ad-4967-8b5b-0538f1a1d0cd" name="Default Changelist" comment="lesson 4">
-      <change afterPath="$PROJECT_DIR$/resources/views/categories/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Events/Orders/OrderCreated.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Exceptions/Orders/CreatingOrderIsNotAvailableNowException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/StoreOrderRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Listeners/Orders/CreateOrderRecipe.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Listeners/Orders/SendEmailToCustomer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Order.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Observers/NewsObserver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Observers/OrderObserver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/DeliveryService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/OrderService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/orders.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_13_173331_create_orders_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/OrderTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/NewsFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/NewsFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_29_170137_create_news_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_29_170137_create_news_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/CategorySeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/CategorySeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/categories/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/categories/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/News/StoreNewsRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/News/StoreNewsRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/News.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/news/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -211,6 +226,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.CreateNewsTest.test_create_success" />
+        <item itemvalue="PHPUnit.CreateNewsTest.test_assert_failed" />
         <item itemvalue="PHPUnit.CreateNewsTest.test_assert_failed" />
         <item itemvalue="PHPUnit.CreateNewsTest.test_create_success" />
       </list>

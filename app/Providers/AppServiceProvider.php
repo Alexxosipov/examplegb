@@ -2,6 +2,10 @@
 
 namespace App\Providers;
 
+use App\Models\News;
+use App\Models\Order;
+use App\Observers\NewsObserver;
+use App\Observers\OrderObserver;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,6 +27,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        News::observe(NewsObserver::class);
+        Order::observe(OrderObserver::class);
     }
 }

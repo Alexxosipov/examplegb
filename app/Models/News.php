@@ -26,6 +26,8 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|News whereTitle($value)
  * @method static \Illuminate\Database\Eloquent\Builder|News whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property int $rating
+ * @method static \Illuminate\Database\Eloquent\Builder|News whereRating($value)
  */
 class News extends Model
 {
@@ -35,6 +37,7 @@ class News extends Model
         'title',
         'description',
         'category_id',
+        'rating'
     ];
 
     public function category()

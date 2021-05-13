@@ -2,10 +2,14 @@
 
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\OrderController;
+use App\Models\Category;
 use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
+    Category::all()->pluck('id')->dd();
+
     return view('welcome');
 });
 
@@ -20,6 +24,8 @@ Route::get('/news/{news}', [NewsController::class, 'show'])->name('news.show');
 
 Route::get('/categories', [CategoryController::class, 'index'])->name('categories.index');
 Route::get('/categories/{category}', [CategoryController::class, 'show'])->name('categories.show');
+
+Route::post('/orders', [OrderController::class, 'store'])->name('orders.store');
 
 
 require __DIR__.'/auth.php';

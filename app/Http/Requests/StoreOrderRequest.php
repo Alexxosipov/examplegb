@@ -1,11 +1,10 @@
 <?php
 
-namespace App\Http\Requests\News;
+namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Validation\Rule;
 
-class StoreNewsRequest extends FormRequest
+class StoreOrderRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,10 +23,10 @@ class StoreNewsRequest extends FormRequest
      */
     public function rules()
     {
+        \Log::info('Validating request');
+
         return [
-            'title' => ['required', 'string', 'max:100'],
-            'description' => ['required', 'string', 'max:300'],
-            'category_id' => ['required', 'integer', 'exists:categories,id'],
+            'name' => ['required', 'string', 'max:255']
         ];
     }
 }
