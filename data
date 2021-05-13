@@ -1,0 +1,7 @@
+- routing
+- middleware
+- validation
+- controller
+- service => (observer, event, listener(s))
+...
+- some async stuff
