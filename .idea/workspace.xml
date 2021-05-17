@@ -1,29 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="226782ba-15ad-4967-8b5b-0538f1a1d0cd" name="Default Changelist" comment="lesson 4">
-      <change afterPath="$PROJECT_DIR$/app/Events/Orders/OrderCreated.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exceptions/Orders/CreatingOrderIsNotAvailableNowException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/StoreOrderRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Listeners/Orders/CreateOrderRecipe.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Listeners/Orders/SendEmailToCustomer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Order.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Observers/NewsObserver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Observers/OrderObserver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/DeliveryService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/OrderService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/orders.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_13_173331_create_orders_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/OrderTest.php" afterDir="false" />
+    <list default="true" id="226782ba-15ad-4967-8b5b-0538f1a1d0cd" name="Default Changelist" comment="lesson 6">
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/News/UpdateNewsRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Rules/CorrectWords.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/dictionaries/words.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/en.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/ru.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/news/update.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Requests/News/StoreNewsRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/News/StoreNewsRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/News.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/news/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/news/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -246,6 +237,7 @@
       <workItem from="1620059630103" duration="5848000" />
       <workItem from="1620318567321" duration="8359000" />
       <workItem from="1620664074383" duration="5404000" />
+      <workItem from="1621269359803" duration="4385000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1619719395977</created>
@@ -268,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620665405910</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="lesson 6">
+      <created>1620930626605</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1620930626605</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,7 +289,8 @@
     <MESSAGE value="init" />
     <MESSAGE value="lesson 2: asdasdfasd" />
     <MESSAGE value="lesson 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 4" />
+    <MESSAGE value="lesson 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 6" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

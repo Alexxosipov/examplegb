@@ -8,6 +8,6 @@
     <title>Hello world</title>
 </head>
 <body>
-    <h1>Привет, geekbrains! Мой возраст: {{ $age }}</h1>
+    <h1>{{ __('Hi Geekbrains, my age is ') }}{{ $age }}</h1>
 </body>
 </html>
