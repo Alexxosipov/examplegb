@@ -37,6 +37,9 @@ class NewsController extends Controller
     public function edit(News $news)
     {
         $categories = Category::all();
+
+        //@todo add notification
+
         return view('news.update', compact('categories', 'news'));
     }
 
