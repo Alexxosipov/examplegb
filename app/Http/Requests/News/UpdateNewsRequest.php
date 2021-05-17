@@ -28,6 +28,7 @@ class UpdateNewsRequest extends FormRequest
             'title' => ['string', 'min:10', 'max:100', new CorrectWords],
             'description' => ['string', 'max:300', new CorrectWords],
             'category_id' => ['integer', 'exists:categories,id'],
+            'rating' => ['integer', 'min:1', 'max:5']
         ];
     }
 }
