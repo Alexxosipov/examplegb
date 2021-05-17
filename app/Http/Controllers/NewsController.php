@@ -47,6 +47,8 @@ class NewsController extends Controller
     {
         $news->update($request->validated());
 
+        //@TODO add event on update
+
         return redirect()->route('news.index')->with('success', 'Новость успешно обновлена');
     }
 }
