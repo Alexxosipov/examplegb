@@ -24,7 +24,10 @@ class EventServiceProvider extends ServiceProvider
         OrderCreated::class => [
             CreateOrderRecipe::class,
             SendEmailToCustomer::class
-        ]
+        ],
+        \SocialiteProviders\Manager\SocialiteWasCalled::class => [
+            'SocialiteProviders\\VKontakte\\VKontakteExtendSocialite@handle',
+        ],
     ];
 
     /**

@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\News\StoreNewsRequest;
 use App\Http\Requests\News\UpdateNewsRequest;
-use App\Http\Requests\NewsShowRequest;
 use App\Models\Category;
 use App\Models\News;
 
@@ -12,7 +11,17 @@ class NewsController extends Controller
 {
     public function index()
     {
-        $news = News::with('category')->get();
+        $newsIds = \Cache::remember('news.index2', 5, function(){
+            return News::select(['id'])
+                ->get()
+                ->pluck('id')
+                ->toArray();
+        });
+
+        $news = News::with('category')
+            ->whereIn('id', $newsIds)
+            ->get();
+
         return view('news.index', compact('news'));
     }
 
@@ -52,3 +61,6 @@ class NewsController extends Controller
         return redirect()->route('news.index')->with('success', 'Новость успешно обновлена');
     }
 }
+
+
+

@@ -52,6 +52,22 @@ services:
     environment:
       APP_ENV: local
       CONTAINER_ROLE: app
+  example-websocket:
+    build: phpdocker/php-fpm
+    container_name: example-websocket
+    volumes:
+      - ../../:/application
+    ports:
+      - "6001:6001"
+    environment:
+      APP_ENV: local
+      CONTAINER_ROLE: websocket
+    networks:
+      - example
+    links:
+      - example-redis
+    depends_on:
+      - example-redis
 
 networks:
   example:

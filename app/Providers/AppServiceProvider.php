@@ -6,6 +6,7 @@ use App\Models\News;
 use App\Models\Order;
 use App\Observers\NewsObserver;
 use App\Observers\OrderObserver;
+use Illuminate\Auth\SessionGuard;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider

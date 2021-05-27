@@ -8,7 +8,9 @@ use App\Http\Controllers\Auth\NewPasswordController;
 use App\Http\Controllers\Auth\PasswordResetLinkController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\VerifyEmailController;
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
+use Laravel\Socialite\Facades\Socialite;
 
 Route::get('/register', [RegisteredUserController::class, 'create'])
                 ->middleware('guest')
@@ -62,3 +64,28 @@ Route::post('/confirm-password', [ConfirmablePasswordController::class, 'store']
 Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])
                 ->middleware('auth')
                 ->name('logout');
+
+
+Route::get('/auth/redirect', function () {
+    return Socialite::driver('vkontakte')->redirect();
+})->name('login.vk.redirect');
+
+Route::get('/auth/login/vk/callback', function () {
+    $vkUser = Socialite::driver('vkontakte')->user();
+
+    $user = User::whereEmail($vkUser->getEmail())->first();
+
+    if (!$user) {
+        $user = User::create([
+            'name' => $vkUser->getName(),
+            'email' => $vkUser->getEmail(),
+            'vk_id' => $vkUser->getId()
+        ]);
+    }
+
+    Auth::loginUsingId($user->id);
+
+    Session::regenerate();
+
+    return redirect()->route('dashboard');
+})->name('login.vk.callback');

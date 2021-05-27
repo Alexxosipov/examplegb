@@ -28,6 +28,7 @@ use Illuminate\Database\Eloquent\Model;
  * @mixin \Eloquent
  * @property int $rating
  * @method static \Illuminate\Database\Eloquent\Builder|News whereRating($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|News checkAuthenticated()
  */
 class News extends Model
 {
@@ -43,5 +44,12 @@ class News extends Model
     public function category()
     {
         return $this->belongsTo(Category::class);
+    }
+
+    public function scopeCheckAuthenticated($query)
+    {
+        if (\Auth::guest()) {
+            $query->where('is_private', false);
+        }
     }
 }

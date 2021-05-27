@@ -52,5 +52,9 @@
                 </x-button>
             </div>
         </form>
+
+        <div class="mt-4">
+            <a href="{{ route('login.vk.redirect') }}">Login via vk</a>
+        </div>
     </x-auth-card>
 </x-guest-layout>
